@@ -11,14 +11,14 @@ while True:
 
     comp = random.choice(list(CHOICES.keys()))
 
-    print(f"You: {CHOICES[user]}  | Computer: {CHOICES[comp]}")
+    print(f"You: {CHOICIES[user]}  | Computer: {CHOICES[comp]}")
 
     if user == comp:
         print("Result: It's a tie!\n")
     elif (user, comp) in WIN_PAIRS:
-        print("Result: You win! 🎉\n")
+        print("Result: You win!\n")
     else:
-        print("Result: You lose! 😅\n")
+        print("Result: You lose!\n")
 
     again = input("Play again? (y/n): ").strip().lower()
     if again != 'y':
