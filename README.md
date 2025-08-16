@@ -7,12 +7,9 @@ while True:
     user = input("Choose [r]ock, [p]aper, [s]cissors: ").strip().lower()
     if user not in CHOICES:
         print("Invalid choice. Please type r, p, or s.\n")
-        continue
-
-    comp = random.choice(list(CHOICES.keys()))
+        continue    comp=random.choice(list(CHOICES.keys()))
 
     print(f"You: {CHOICIES[user]}  | Computer: {CHOICES[comp]}")
-
     if user == comp:
         print("Result: It's a tie!\n")
     elif (user, comp) in WIN_PAIRS:
