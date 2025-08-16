@@ -11,7 +11,7 @@ while True:
 
     comp = random.choice(list(CHOICES.keys()))
 
-    print(f"You: {CHOICES[user]}  | Computer: {CHOICES[comp]}")
+    print(f"You: {CHOICES[user]}  |  Computer: {CHOICES[comp]}")
 
     if user == comp:
         print("Result: It's a tie!\n")
